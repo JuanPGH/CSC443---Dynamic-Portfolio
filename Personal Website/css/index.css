@@ -1,0 +1,58 @@
+/* Content Sections */
+#top {
+    height: 40%;
+}
+#bottom {
+    display: flex;
+    justify-content: center;
+    height: 60%;
+
+}
+/* Top Sections */
+#bio {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width:60%;
+    float: left;
+    padding: 100px 50px 0px 180px;
+}
+#profile-picture {
+    box-sizing: border-box;
+    padding: 100px 100px 0px 20px;
+    height: 100%;
+    width: 40%;
+    float: right;
+    text-align: center;
+    
+}
+#profile-picture img {
+    height:100%;
+    border-radius: 10px;
+}
+.content-text {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large; 
+    color: #404040;
+    background-color: #82A68F;
+    padding: 14px;
+    border-radius: 10px;
+}
+/* Bottom Sections */
+.subpage-button {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 20px 0px 20px;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: #82A68F;
+    border-radius: 10px;
+}
+.subpage-button img {
+    height: 50%;
+    aspect-ratio: 1;
+}

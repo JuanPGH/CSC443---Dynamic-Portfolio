@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+}
+/* Main Sections */
+#header {
+    background-color: #A0BCAA;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#content {
+    background-color: #BDD0C4;
+    height: 100%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    
+}
+#footer {
+    background-color: #A0BCAA;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+/* Header Sections */
+#menu {
+    float: left;
+    background-color: #82A68F;
+    aspect-ratio: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#menu:hover #menu-content {
+    display: block;
+}
+#menu img {
+    display: block;
+    height: 35%;
+    width: 35%;
+}
+#menu-content {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 1;
+}
+#menu-content li {
+    list-style-type: none;
+    background-color: #A0BCAA;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large; 
+    color: #404040;
+    padding: 10px;
+    text-align: center;
+}
+#menu-content li:hover {
+    background-color: #82A68F;
+}
+#menu-content ul {
+    margin: 0;
+    padding: 0;
+}
+#menu-content ul a {
+    text-decoration: none;
+}
+#title {
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+.header-text {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:xx-large;
+    color: #404040;
+    margin: 15px;
+}
+.header-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    float: right;
+    height: 100%;
+    aspect-ratio: 1;
+    padding: 5px;
+    background-color: #82A68F;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.header-button img {
+    height: 80%;
+    aspect-ratio: 1;
+}
+
+/* Footer Sections */
+#social-medias {
+    float: left;
+    display: flex;
+    align-items: center;
+    background-color: #82A68F;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 10px;
+}
+#social-medias a img {
+    height: 25px;
+    aspect-ratio: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#assignments-link {
+    float: right;
+    background-color: #82A68F;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 10px;
+}
+#course-text {
+    float: right;
+    background-color: #82A68F;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 10px;
+}
+#contact-link {
+    float: right;
+    background-color: #82A68F;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.footer-text {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large; 
+    color: #404040;
+    margin: 15px;
+}

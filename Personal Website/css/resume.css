@@ -1,0 +1,43 @@
+/* Education Sections */
+#education {
+    height: 80%;
+    width: 33%;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+#education span {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large; 
+    color: #404040;
+}
+#education img {
+    width: 45%;
+    aspect-ratio: 1;
+    border-radius: 40px;
+    margin-top: 10px;
+    padding-left: 2;
+    padding-right: 2;
+}
+/* Experience Sections */
+.experience-column {
+    height: 80%;
+    width: 33%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.experience-card {
+    margin: 5px 0px 5px 0px;
+    box-sizing: border-box;
+    width: 90%;
+    height: 45%;
+    background-color: #82A68F;
+    border-radius: 20px;
+    padding: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large; 
+    color: #404040;
+}
