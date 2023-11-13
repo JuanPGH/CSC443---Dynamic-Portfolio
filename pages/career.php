@@ -1,8 +1,8 @@
 <html>
   <head>
-    <title>Professional Experience</title>
+    <title>Career</title>
     <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/resume.css" />
+    <link rel="stylesheet" href="../css/career.css" />
   </head>
   <body>
     <div id="header">
@@ -11,7 +11,7 @@
         <div id="menu-content">
           <ul>
             <a href="home.php"><li>Home</li></a>
-            <a href="resume.php"><li>Career</li></a>
+            <a href="career.php"><li>Career</li></a>
             <a href="gallery.php"><li>Gallery</li></a>
             <a href="games.php"><li>Games</li></a>
             <a href="contact.php"><li>Contact</li></a>
@@ -19,10 +19,10 @@
         </div>
       </div>
       <div id="title">
-        <span class="header-text">Professional Experience</span>
+        <span class="header-text">Career</span>
       </div>
       <div class="header-button">
-        <img src="../icons/resume.png" />
+        <img src="../icons/career.png" />
       </div>
       <div class="header-button">
         <a href="home.php"><img src="../icons/home.png" /></a>

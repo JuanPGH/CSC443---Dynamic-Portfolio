@@ -11,7 +11,7 @@
         <div id="menu-content">
           <ul>
             <a href="home.php"><li>Home</li></a>
-            <a href="resume.php"><li>Career</li></a>
+            <a href="career.php"><li>Career</li></a>
             <a href="gallery.php"><li>Gallery</li></a>
             <a href="games.php"><li>Games</li></a>
             <a href="contact.php"><li>Contact</li></a>
@@ -41,13 +41,13 @@
       </div>
       <div id="bottom">
         <div class="subpage-button">
-          <a href="resume.php"><img src="../icons/resume.png" /></a>
+          <a href="career.php"><img src="../icons/career.png" /></a>
         </div>
         <div class="subpage-button">
           <a href="gallery.php"><img src="../icons/gallery.png" /></a>
         </div>
         <div class="subpage-button">
-          <a href="video-games.php"><img src="../icons/video-games.png" /></a>
+          <a href="games.php"><img src="../icons/video-games.png" /></a>
         </div>
       </div>
     </div>
