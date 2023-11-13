@@ -3,6 +3,7 @@
     height: 300px;
     display: flex;
     align-items: flex-start;
+    padding-top: 10px;
 }
 .image-container {
     cursor: pointer;
@@ -34,9 +35,9 @@
 .image-overlay:target {
     visibility: visible;
 }
-.iamge-overlay a {
-    width: 40%;
-    cursor: pointer;
+.overlay-image {
+    border-radius: 10px;
+    height: 70%;
 }
 .title {
     text-align: center;
