@@ -10,11 +10,11 @@
         <img src="../icons/menu.png" />
         <div id="menu-content">
           <ul>
-            <a href="home.html"><li>Home</li></a>
-            <a href="resume.html"><li>Career</li></a>
-            <a href="gallery.html"><li>Gallery</li></a>
-            <a href="games.html"><li>Games</li></a>
-            <a href="contact.html"><li>Contact</li></a>
+            <a href="home.php"><li>Home</li></a>
+            <a href="resume.php"><li>Career</li></a>
+            <a href="gallery.php"><li>Gallery</li></a>
+            <a href="games.php"><li>Games</li></a>
+            <a href="contact.php"><li>Contact</li></a>
           </ul>
         </div>
       </div>
@@ -41,13 +41,13 @@
       </div>
       <div id="bottom">
         <div class="subpage-button">
-          <a href="resume.html"><img src="../icons/resume.png" /></a>
+          <a href="resume.php"><img src="../icons/resume.png" /></a>
         </div>
         <div class="subpage-button">
-          <a href="gallery.html"><img src="../icons/gallery.png" /></a>
+          <a href="gallery.php"><img src="../icons/gallery.png" /></a>
         </div>
         <div class="subpage-button">
-          <a href="video-games.html"><img src="../icons/video-games.png" /></a>
+          <a href="video-games.php"><img src="../icons/video-games.png" /></a>
         </div>
       </div>
     </div>
@@ -75,7 +75,7 @@
       </div>
 
       <div id="contact-link">
-        <a href="contact.html">
+        <a href="contact.php">
           <span class="footer-text">Contact Information</span>
         </a>
       </div>
