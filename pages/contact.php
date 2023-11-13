@@ -1,8 +1,8 @@
 <html>
   <head>
-    <title>Template</title>
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/home.css" />
+    <title>Contact Information</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
   </head>
   <body>
     <div id="header">
@@ -19,16 +19,31 @@
         </div>
       </div>
       <div id="title">
-        <span class="header-text">Template</span>
+        <span class="header-text">Contact Information</span>
       </div>
       <div class="header-button">
-        <img src="../icons/home.png" />
+        <img src="../icons/contact.png" />
       </div>
       <div class="header-button">
         <a href="home.php"><img src="../icons/home.png" /></a>
       </div>
     </div>
-    <div id="content"></div>
+    <div id="content">
+      <div id="contact-box">
+        <span>Phone Number:</span>
+        <span>+961 81 632122</span>
+        <br />
+        <span>Personal Email:</span>
+        <span
+          ><a href="mailto:jpghantous2002@gmail.com"
+            >jpghantous2002@gmail.com</a
+          ></span
+        >
+        <br />
+        <span>Address:</span>
+        <span>Brummana, Lebanon</span>
+      </div>
+    </div>
     <div id="footer">
       <div id="social-medias">
         <a href="https://www.twitter.com" target="_blank"

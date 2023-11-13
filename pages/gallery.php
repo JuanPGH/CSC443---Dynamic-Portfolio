@@ -1,8 +1,14 @@
+<?php
+  $json = file_get_contents("../photo-names.json");
+  $photoNames = json_decode($json, true);
+  $gallery = $photoNames["gallery"];
+?>
+
 <html>
   <head>
-    <title>Contact Information</title>
+    <title>Gallery</title>
     <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/contact.css" />
+    <link rel="stylesheet" href="../css/gallery.css" />
   </head>
   <body>
     <div id="header">
@@ -10,38 +16,37 @@
         <img src="../icons/menu.png" />
         <div id="menu-content">
           <ul>
-            <a href="home.html"><li>Home</li></a>
-            <a href="resume.html"><li>Career</li></a>
-            <a href="gallery.html"><li>Gallery</li></a>
-            <a href="games.html"><li>Games</li></a>
-            <a href="contact.html"><li>Contact</li></a>
+            <a href="home.php"><li>Home</li></a>
+            <a href="resume.php"><li>Career</li></a>
+            <a href="gallery.php"><li>Gallery</li></a>
+            <a href="games.php"><li>Games</li></a>
+            <a href="contact.php"><li>Contact</li></a>
           </ul>
         </div>
       </div>
       <div id="title">
-        <span class="header-text">Contact Information</span>
+        <span class="header-text">Gallery</span>
       </div>
       <div class="header-button">
-        <img src="../icons/contact.png" />
+        <img src="../icons/gallery.png" />
       </div>
       <div class="header-button">
-        <a href="home.html"><img src="../icons/home.png" /></a>
+        <a href="home.php"><img src="../icons/home.png" /></a>
       </div>
     </div>
     <div id="content">
-      <div id="contact-box">
-        <span>Phone Number:</span>
-        <span>+961 81 632122</span>
-        <br />
-        <span>Personal Email:</span>
-        <span
-          ><a href="mailto:jpghantous2002@gmail.com"
-            >jpghantous2002@gmail.com</a
-          ></span
-        >
-        <br />
-        <span>Address:</span>
-        <span>Brummana, Lebanon</span>
+      <div id="gallery">
+        <?php
+          for ($i = 1; $i <sizeof($gallery)+1; $i++) {
+            echo (
+              '<a href="#overlay-'.$i.'">
+                <div class="image-container">
+                  <img class="gallery-image" src="../images/'.$gallery[$i-1].'"/>
+                </div>
+              </a>'
+            );
+          }
+        ?>
       </div>
     </div>
     <div id="footer">
@@ -67,10 +72,19 @@
         </span>
       </div>
       <div id="contact-link">
-        <a href="contact.html">
+        <a href="contact.php">
           <span class="footer-text">Contact Information</span>
         </a>
       </div>
     </div>
+    <?php
+      for ($i = 1; $i <sizeof($gallery)+1; $i++) {
+        echo (
+          '<div class="image-overlay" id="overlay-'.$i.'">
+            <a href="#header"><img class="overlay-image" src="../images/'.$gallery[$i-1].'" /></a>
+          </div>'
+        );
+      }
+    ?>
   </body>
 </html>
