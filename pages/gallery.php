@@ -1,5 +1,5 @@
 <?php
-  $json = file_get_contents("../photo-names.json");
+  $json = file_get_contents("../resources/photo-names.json");
   $photoNames = json_decode($json, true);
   $gallery = $photoNames["gallery"];
 ?>
@@ -13,7 +13,7 @@
   <body>
     <div id="header">
       <div id="menu">
-        <img src="../icons/menu.png" />
+        <img src="../images/icons/menu.png" />
         <div id="menu-content">
           <ul>
             <a href="home.php"><li>Home</li></a>
@@ -28,10 +28,10 @@
         <span class="header-text">Gallery</span>
       </div>
       <div class="header-button">
-        <img src="../icons/gallery.png" />
+        <img src="../images/icons/gallery.png" />
       </div>
       <div class="header-button">
-        <a href="home.php"><img src="../icons/home.png" /></a>
+        <a href="home.php"><img src="../images/icons/home.png" /></a>
       </div>
     </div>
     <div id="content">
@@ -52,18 +52,18 @@
     <div id="footer">
       <div id="social-medias">
         <a href="https://www.twitter.com" target="_blank"
-          ><img src="../icons/twitter.png"
+          ><img src="../images/icons/twitter.png"
         /></a>
         <a
           href="https://open.spotify.com/user/y74hmya3dklwhy5e2zdbx1uiu?si=fc0a43d5e50a417a"
           target="_blank"
-          ><img src="../icons/spotify.png"
+          ><img src="../images/icons/spotify.png"
         /></a>
         <a href="https://instagram.com/juanpghantoush" target="_blank"
-          ><img src="../icons/instagram.png"
+          ><img src="../images/icons/instagram.png"
         /></a>
         <a href="https://www.linkedin.com/in/juanghantous/" target="_blank"
-          ><img src="../icons/linkedin.png"
+          ><img src="../images/icons/linkedin.png"
         /></a>
       </div>
       <div id="course-text">
