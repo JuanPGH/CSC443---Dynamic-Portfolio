@@ -12,9 +12,9 @@ body {
 }
 #content {
     background-color: #BDD0C4;
-    height: 100%;
+    height: -webkit-fill-available;
     margin-top: 60px;
-    margin-bottom: -60px;
+    /* margin-bottom: 60px; */
     
 }
 #footer {
