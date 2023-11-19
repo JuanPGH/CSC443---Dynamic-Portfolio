@@ -1,5 +1,5 @@
 <?php
-  $json = file_get_contents("../resources/photo-names.json");
+  $json = file_get_contents("../resources/gallery.json");
   $photoNames = json_decode($json, true);
   $gallery = $photoNames["gallery"];
 ?>
