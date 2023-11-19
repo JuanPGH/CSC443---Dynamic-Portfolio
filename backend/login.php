@@ -2,7 +2,7 @@
     $username=$_POST["username"];
     $password=$_POST["password"];    
 
-    $usersJson = file_get_contents('users.json');
+    $usersJson = file_get_contents('../resources/users.json');
     $userList = json_decode($usersJson, true);
 
     $success = false;

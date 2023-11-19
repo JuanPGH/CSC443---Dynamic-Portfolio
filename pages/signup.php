@@ -1,3 +1,14 @@
+<?php
+  $errorCode = isset($_GET['error']) ? $_GET['error'] : null;
+
+  if ($errorCode === '2') {
+    $errorMessage = 'Username already taken. Please try again.';
+} else {
+    $errorMessage = null;
+}
+
+?>
+
 <html>
   <head>
     <title>Sign Up</title>
@@ -25,6 +36,11 @@
         </div>
         <div id="signup-form">
           <form action="../backend/signup.php", method="POST", name="signup-form">
+            <?php 
+              if (!empty($errorMessage)) {
+                echo '<label style="color: rgb(179, 44, 44)">'.$errorMessage.'</label><br>';
+              }
+            ?>
             <div id="text-region">
                 <div class="text-region-column">
                     <label for="fullname">Full Name</label>
@@ -98,7 +114,6 @@
         var confPassword = form.elements["conf-password"].value;
         var sex = form.elements["sex"].value;
         var birthdate = form.elements["birthdate"].value;
-        console.log(fullname, username, password, confPassword, sex, birthdate);
 
         if (fullname=="" || username=="" || password=="" || confPassword=="" || sex=="" || birthdate=="") {
             alert("All fields must be filled.");
