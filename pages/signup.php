@@ -3,10 +3,14 @@
 
   if ($errorCode === '2') {
     $errorMessage = 'Username already taken. Please try again.';
-} else {
-    $errorMessage = null;
-}
+  } else {
+      $errorMessage = null;
+  }
 
+  session_start();
+  session_unset();
+  session_destroy();
+  
 ?>
 
 <html>
