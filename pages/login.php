@@ -1,3 +1,14 @@
+<?php
+  $errorCode = isset($_GET['error']) ? $_GET['error'] : null;
+
+  if ($errorCode === '1') {
+    $errorMessage = 'Invalid username or password. Please try again.';
+} else {
+    $errorMessage = null;
+}
+
+?>
+
 <html>
   <head>
     <title>Log In</title>
@@ -25,6 +36,11 @@
         </div>
         <div id="login-form">
           <form action="../backend/login.php", method="POST", name="login-form">
+            <?php 
+              if (!empty($errorMessage)) {
+                echo '<label style="color: rgb(179, 44, 44)">'.$errorMessage.'</label><br>';
+              }
+            ?>
             <label for="username">Username</label>
             <input type="text" name="username" class="text-field">
             <br>
