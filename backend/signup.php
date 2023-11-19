@@ -28,6 +28,6 @@
     file_put_contents('../resources/users.json', json_encode($userList, JSON_PRETTY_PRINT));
 
     session_start();
-    $_SESSION['username'] = $username; 
+    $_SESSION['fullname'] = $fullname; 
     header('Location: ../pages/home.php');
 ?>

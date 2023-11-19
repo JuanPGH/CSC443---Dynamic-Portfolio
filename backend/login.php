@@ -6,17 +6,19 @@
     $userList = json_decode($usersJson, true);
 
     $success = false;
+    $fullname = "";
 
     foreach ($userList['users'] as $user) {
         if ($user['username'] === $username && $user['password'] === $password) {
             $success = true;
+            $fullname = $user['fullname'];
             break;
         }
     }
 
     if ($success) {
         session_start();
-        $_SESSION['username'] = $username; 
+        $_SESSION['fullname'] = $fullname; 
         header("Location: ../pages/home.php");
         exit();
     }

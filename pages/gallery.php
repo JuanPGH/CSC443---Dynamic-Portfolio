@@ -1,6 +1,6 @@
 <?php
   session_start();
-  if (!isset($_SESSION["username"])) {
+  if (!isset($_SESSION["fullname"])) {
     header("Location: ../index.php");
   }
 
@@ -33,10 +33,16 @@
         <span class="header-text">Gallery</span>
       </div>
       <div class="header-button">
+        <a href="login.php"><img src="../images/icons/logout.png" /></a>
+      </div>
+      <div class="header-button">
         <img src="../images/icons/gallery.png" />
       </div>
       <div class="header-button">
         <a href="home.php"><img src="../images/icons/home.png" /></a>
+      </div>
+      <div id="welcome">
+        <span class="header-text" style="font-size: x-large">Welcome <?php echo $_SESSION["fullname"];?></span>
       </div>
     </div>
     <div id="content">
