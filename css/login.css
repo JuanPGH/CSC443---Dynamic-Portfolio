@@ -1,0 +1,85 @@
+/* main.css overrides */
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* login */
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+#login-box {
+    width: 30%;
+    /* height: 70%; */
+    background-color: #A0BCAA;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: x-large; 
+    color: #404040;
+}
+#login-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    margin-bottom: 20px;
+    margin-top: 44px;
+}
+.login-button {
+    display: flex;
+    width: 30%;
+    height: 50px;
+    background-color: #82A68F;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.login-button:hover {
+    background-color: #688b75;
+}
+#login-form {
+    display: block;
+}
+#login-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+#login-form label {
+    font-size: large;
+    margin-bottom: 3px;;
+}
+.form-button {
+    background-color: #82A68F;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 7px;
+    margin-right: 7px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium; 
+}
+.form-button:hover {
+    background-color: #688b75;
+}
+.text-field {
+    padding: 10px;
+    width: 60%;
+    border-radius: 10px;
+    border-color: transparent;
+}
