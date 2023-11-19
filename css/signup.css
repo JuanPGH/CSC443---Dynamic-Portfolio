@@ -12,8 +12,8 @@
     align-items: center;
     margin-bottom: 60px;
 }
-#login-box {
-    width: 30%;
+#signup-box {
+    width: 50%;
     /* height: 70%; */
     background-color: #A0BCAA;
     border-radius: 10px;
@@ -24,7 +24,7 @@
     font-size: x-large; 
     color: #404040;
 }
-#login-header {
+#signup-header {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -33,7 +33,7 @@
     margin-bottom: 20px;
     margin-top: 44px;
 }
-.login-button {
+.signup-button {
     display: flex;
     width: 150px;
     height: 50px;
@@ -46,20 +46,34 @@
     margin-right: 15px;
     cursor: pointer;
 }
-.login-button:hover {
+.signup-button:hover {
     background-color: #688b75;
 }
-#login-form {
+#signup-form {
     display: block;
 }
-#login-form form {
+#text-region {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.text-region-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#signup-form form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
 }
-#login-form label {
+#signup-form label {
     font-size: large;
     margin-bottom: 3px;;
 }
@@ -80,7 +94,6 @@
 .text-field {
     padding: 10px;
     width: 200px;
-
     border-radius: 10px;
     border-color: transparent;
 }

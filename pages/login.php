@@ -68,14 +68,15 @@
       }
       function LogIn() {
         var form = document.querySelector("form[name='login-form']");
+
         var username = form.elements["username"].value;
         var password = form.elements["password"].value;
+        
         if (username=="" || password=="") {
           alert("All fields must be filled!")
+          return;
         }
-        else {
-          form.submit();
-        }
+        form.submit();
       }
       function ClearForm() {
         var form = document.querySelector("form[name='login-form']");
