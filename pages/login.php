@@ -3,9 +3,13 @@
 
   if ($errorCode === '1') {
     $errorMessage = 'Invalid username or password. Please try again.';
-} else {
-    $errorMessage = null;
-}
+  } else {
+      $errorMessage = null;
+  }
+
+  session_start();
+  session_unset();
+  session_destroy();
 
 ?>
 
